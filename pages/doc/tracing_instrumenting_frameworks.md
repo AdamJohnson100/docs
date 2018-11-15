@@ -23,7 +23,6 @@ This page shows you the fast track to producing out-of-the-box metrics and trace
 * For information about ingesting trace data from an application that has been instrumented with a 3rd party solution such as Jaeger, see XX.
 --->
 
-
 ## Sample Setup
 
 Watch this video to see how to set up a sample application to send out-of-the-box metrics and traces. (You can read about the steps [below](#quickstart).)
