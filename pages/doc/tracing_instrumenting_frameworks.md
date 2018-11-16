@@ -40,7 +40,7 @@ Gather the following information, which you will need in Step 2. This informatio
 
 
 <details>
-<summary>If you prefer to send data through a Wavefront proxy.</summary>
+<summary>If you prefer to send data through a Wavefront proxy...</summary>
 <br>
 <p>
 You can optionally instrument your application to send data through a Wavefront proxy instead of using direct ingestion.
