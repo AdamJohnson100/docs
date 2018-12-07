@@ -40,7 +40,7 @@ Gather the following information, which you will need in Step 2. This informatio
 
 
 <details>
-<summary>If you prefer to send data through a Wavefront proxy...</summary>
+<summary>If you know you need to send data through a Wavefront proxy, click here for steps.</summary>
 <br>
 <p>
 You can optionally instrument your application to send data through a Wavefront proxy instead of using direct ingestion.
@@ -48,7 +48,7 @@ You can optionally instrument your application to send data through a Wavefront 
 To set up a Wavefront proxy:
 </p>
 <ol>
-<li> <a href="proxies_installing.html">Install the proxy</a>, if necessary. Make sure you are using Version 4.32 or later.</li>
+<li> <a href="proxies_installing.html">Install the proxy</a>, if necessary. Make sure you are using Version 4.33 or later.</li>
 <li> On the proxy host, open the proxy configuration file <code>wavefront.conf</code> in the installed <a href="proxies_configuring.html#paths">file path</a>, for example, <code>/etc/wavefront/wavefront-proxy/wavefront.conf</code>.</li>
 <li> In the <code>wavefront.conf</code> file, find the following <a href="proxies_installing.html#configuring-proxy-ports-for-metrics-histograms-and-traces">port properties</a>, and uncomment them if necessary. You can optionally change these default port numbers:</li>
 <pre>
@@ -128,9 +128,9 @@ This table shows the available Wavefront observability SDKs for collecting data 
 <td>Instrument Dropwizard, a Jersey-compliant framework for building RESTful Web services. Enable HTTP requests and responses to send metrics, histograms and trace data to Wavefront.</td></tr>
 
 <tr>
-<td>Spring Boot framework</td>
-<td markdown="span">[`wavefront-jersey-sdk-java`](https://github.com/wavefrontHQ/wavefront-jersey-sdk-java)</td>
-<td>Instrument Spring Boot, a Jersey-compliant framework for building RESTful Web services. Enable HTTP requests and responses to send metrics, histograms, and trace data to Wavefront.</td></tr>
+<td>gRPC framework</td>
+<td markdown="span">[`wavefront-grpc-sdk-java`](https://github.com/wavefrontHQ/wavefront-gRPC-sdk-java)</td>
+<td>Instrument gRPC, a framework for building services that communicate through remote procedure calls. Enable gRPC requests and responses to send metrics, histograms, and trace data to Wavefront.</td></tr>
 
 <tr>
 <td>JAX-RS implementations</td>
@@ -141,6 +141,11 @@ This table shows the available Wavefront observability SDKs for collecting data 
 <td>JVM</td>
 <td markdown="span">[`wavefront-runtime-sdk-jvm`](https://github.com/wavefrontHQ/wavefront-runtime-sdk-jvm)</td>
 <td>Instrument the Java Virtual Machine to send runtime metrics and histograms to Wavefront. Measure CPU, disk usage, and so on.</td></tr>
+
+<tr>
+<td>Spring Boot framework</td>
+<td markdown="span">[`wavefront-jersey-sdk-java`](https://github.com/wavefrontHQ/wavefront-jersey-sdk-java)</td>
+<td>Instrument Spring Boot, a Jersey-compliant framework for building RESTful Web services. Enable HTTP requests and responses to send metrics, histograms, and trace data to Wavefront.</td></tr>
 
 <tr>
 <td>Custom business operations (metrics data)</td>
